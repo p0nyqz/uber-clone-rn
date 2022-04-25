@@ -12,12 +12,16 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@reduxjs/toolkit": "^1.8.1",
+    "@rneui/base": "^4.0.0-rc.1",
+    "@rneui/themed": "^4.0.0-rc.1",
     "expo": "~44.0.0",
     "expo-status-bar": "~1.2.0",
     "metro": "^0.70.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "^0.64.3",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-vector-icons": "^9.1.0",
     "react-native-web": "0.17.1",
     "react-redux": "^8.0.1",
     "twrnc": "^3.3.0"
