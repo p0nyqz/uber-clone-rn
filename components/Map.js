@@ -1,11 +1,11 @@
 import React from 'react'
 import MapView, {Marker} from 'react-native-maps';
 import tw from 'twrnc';
-import { useSelector } from "react-redux";
-import { selectOrigin } from "../slices/navSlice";
+// import { useSelector } from "react-redux";
+// import { selectOrigin } from "../slices/navSlice";
 
 const Map = () => {
-    const origin = useSelector(selectOrigin);
+    // const origin = useSelector(selectOrigin);
   return (
     <MapView
         style={tw`flex-1`}
@@ -21,7 +21,19 @@ const Map = () => {
             longitudeDelta: 0.0421,
         }}
         >
-        {origin?.location && (
+        <Marker
+            coordinate={{
+                latitude: 37.78825,
+                longitude: -122.4324,
+                // latitude: origin.location.lat,
+                // longitude: origin.location.lng,
+            }}
+            title='Origin'
+            description='Origin'
+            identifier='origin'
+        />
+
+        {/* {origin?.location && (
             <Marker
                 coordinate={{
                     latitude: 37.78825,
@@ -33,7 +45,8 @@ const Map = () => {
                 description={origin.description}
                 identifier='origin'
             />
-        )}
+        )}*/}
+
     </MapView>
   );
 };
