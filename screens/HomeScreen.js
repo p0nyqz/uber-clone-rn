@@ -4,7 +4,7 @@ import tw from 'twrnc';
 import NavOptions from '../components/NavOptions';
 import { GooglePlacesAutocomplete } from
         'react-native-google-places-autocomplete';
-import { GOOGLE_MAPS_APIKEY } from "@env";
+// import { GOOGLE_MAPS_APIKEY } from "@env";
 import { useDispatch } from 'react-redux';
 import { setDestination, setOrigin} from '../slices/navSlice';
 
@@ -48,7 +48,7 @@ const HomeScreen = () => {
                 enablePoweredByContainer={false}
                 minLength={2}
                 query={{
-                    key: {GOOGLE_MAPS_APIKEY},
+                    // key: GOOGLE_MAPS_APIKEY,
                     language: 'en',
                 }}
                 nearbyPlacesAPI="GooglePlacesSearch"

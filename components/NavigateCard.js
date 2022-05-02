@@ -3,7 +3,7 @@ import React from 'react';
 import tw from 'twrnc';
 import { GooglePlacesAutocomplete } from
         'react-native-google-places-autocomplete';
-import { GOOGLE_MAPS_APIKEY } from '@env'; //#FIXME!!!
+// import { GOOGLE_MAPS_APIKEY } from '@env';
 import { useDispatch } from "react-redux";
 import { setDestination } from "../slices/navSlice";
 import { useNavigation } from "@react-navigation/native";
@@ -34,7 +34,7 @@ const NavigateCard = () => {
                       }}
                       enablePoweredByContainer={false}
                       query={{
-                          key: GOOGLE_MAPS_APIKEY,
+                          // key: GOOGLE_MAPS_APIKEY,
                           language: 'en',
                       }}
                       nearbyPlacesAPI='GooglePlacesSearch'
