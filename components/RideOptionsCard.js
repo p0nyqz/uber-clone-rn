@@ -46,7 +46,7 @@ const RideOptionsCard = () => {
                 <Icon name='chevron-left' type='fontawesome'/>
             </TouchableOpacity>
             <Text style={tw`text-center py-5 text-xl`}>Select a Ride -
-                {travelTimeInformation?.distance.text}</Text>
+                {travelTimeInformation?.distance?.text}</Text>
         </View>
         <FlatList data={data} keyExtractor={(item) => item.id}
           renderItem={({item: {id, title, multiplier,  image }, item }) => (
@@ -64,7 +64,7 @@ const RideOptionsCard = () => {
                   />
                   <View style={tw`-ml-6`}>
                       <Text style={tw`text-xl font-semibold`}>{title}</Text>
-                      <Text>{travelTimeInformation?.duration.text} Travel Time</Text>
+                      <Text>{travelTimeInformation?.duration?.text} Travel Time</Text>
                   </View>
                   <Text style={tw`text-xl`}>
                       {new Intl.NumberFormat('en-gb', {
